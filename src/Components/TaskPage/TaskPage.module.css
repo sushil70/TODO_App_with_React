@@ -1,0 +1,43 @@
+.taskpageheading{
+    text-align: center;
+    color: #ECEEEE;
+    font-weight: 400;
+}
+
+.maincontainer{
+    background-color: #163631;
+    width: calc(100% - 300px - 25%);
+    overflow: auto;
+    height: 100vh;
+}
+
+.maincontainer::-webkit-scrollbar{
+    display: none;
+}
+
+.buttoncontainer{
+    display: flex;
+    width: 100%;
+}
+
+.taskpagemainbuttion{
+    width: calc(25% - 40px);
+    padding: 40px 20px 40px 60px;
+    /*border-bottom-color: #75948F;*/
+    border-bottom: 1px solid #75948F;
+}
+
+.countdisplay{
+    border-radius: 20px;
+    padding: 1px 11px;
+    background-color: #2C574E;
+    color: #75948F;
+}
+
+.bottonlable{
+    background-color: #163631;
+    border: none;
+    /*margin: 5px;*/
+    color: #75948F;
+    /*padding: 1px 11px;*/
+}

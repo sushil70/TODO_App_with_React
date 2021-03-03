@@ -1,11 +1,12 @@
 import React from "react"
+import HomePage from "./Contaner/HomePage"
 
 class App extends React.Component {
     render() {
         return (
-            <h1>
-                Hello
-            </h1>
+            <div>
+                <HomePage/>
+            </div>
         );
     }
 }

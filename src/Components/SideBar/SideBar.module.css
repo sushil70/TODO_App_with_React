@@ -1,0 +1,17 @@
+.maincontaner{
+    width: 300px;
+    background-color: #F6F2E6;
+    height: 100vh;
+}
+
+.container{
+    padding: 50px 40px;
+}
+
+.subcontainer{
+    padding: 5px;
+}
+
+.labledesign{
+    margin: 0 15px;
+}
