@@ -22,9 +22,10 @@
 
 .taskpagemainbuttion{
     width: calc(25% - 40px);
-    padding: 40px 20px 40px 60px;
+    padding: 20px 20px 40px;
     /*border-bottom-color: #75948F;*/
     border-bottom: 1px solid #75948F;
+    text-align: center;
 }
 
 .countdisplay{
@@ -41,3 +42,40 @@
     color: #75948F;
     /*padding: 1px 11px;*/
 }
+
+.datacollection{
+    padding: 40px 0;
+}
+
+.tasks{
+    /*padding: 20px;*/
+    display: flex;
+    /*margin: 40px 0;*/
+}
+
+.taskdetails{
+    margin: 11px 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.tasknamestyle{
+    margin: 0 10px;
+    color: #75948F;
+}
+
+.checkboxstyle{
+    background-color: #163631;
+    color: #163631;
+}
+
+.statusstyle{
+    text-align: center;
+    width: 100px;
+    background-color: green;
+    border-radius: 50px;
+    padding: 5px;
+    color: #75948F;
+}
+

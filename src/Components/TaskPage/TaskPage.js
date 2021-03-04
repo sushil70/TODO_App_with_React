@@ -3,6 +3,21 @@ import {taskData} from "../../Utils/TaskDummyData";
 import classes from "./TaskPage.module.css"
 
 class TaskPage extends React.Component{
+    dataDisplayer = (data) => {
+        return(
+        <div className={classes.tasks}>
+            <div className={classes.taskdetails}>
+                <div>
+                    <input type="checkbox" className={classes.checkboxstyle}/>
+                    <span className={classes.tasknamestyle}>{data.Task_name}</span>
+                </div>
+                <div className={classes.statusstyle}>
+                    {data.Status}
+                </div>
+            </div>
+        </div>
+        )
+    }
     render() {
         return(
             <div className={classes.maincontainer}>
@@ -27,11 +42,13 @@ class TaskPage extends React.Component{
                         <button className={classes.bottonlable}>Links</button>
                     </div>
                 </div>
-            {
-                taskData.map(data => <div>
-                    {data.Task_name}
-                </div>)
-            }
+                <div className={classes.datacollection}>
+                    {
+                        taskData.map(data => <div>
+                            {this.dataDisplayer(data)}
+                        </div>)
+                    }
+                </div>
             </div>
         );
     }
